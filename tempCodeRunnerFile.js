@@ -1,2 +1,2 @@
-const bodyParser = require('body-parser');
-// const encoder = bodyParser.urlencoded();
+app.use('/', express.static(__dirname + '/LoginPage'));
+// app.use('/frontpage', express.static(__dirname + '/front'));

@@ -30,6 +30,7 @@ function addNewPerson(fullName, userName, password)
 }
 function checkIfExist(userName, password)
 {
+    console.log(userName);
     return new Promise(function(resolve,reject)
     {
         connection.query(
@@ -49,7 +50,29 @@ function checkIfExist(userName, password)
         )
     })
 }
+function getPassword(mailId)
+{
+    return new Promise(function(resolve,reject)
+    {
+        connection.query(
+            "SELECT password FROM infoofuser WHERE userName = ?;",
+             [mailId],
+            function(err,results,field)
+            {
+                if(err)
+                {
+                    reject(err);
+                }
+                else
+                {
+                    resolve(results);
+                }
+            }
+        )
+    })
+}
 exports = module.exports = {
     addNewPerson,
-    checkIfExist
+    checkIfExist,
+    getPassword
 }
