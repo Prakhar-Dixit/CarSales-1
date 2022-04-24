@@ -7,13 +7,20 @@
     <title>Forget Password</title>
     <script src="jquery-3.6.0.js"></script>
     <script src="script.js"></script>
-
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <input id="gmailId" type="text" placeholder="Gmail Id">
-    <button id="gmailIdSubBtn" type="submit">Submit</button> <br>
-    <input id="otp" type="text" placeholder="One Time Password">
-    <button id="otpSubBtn" type="submit">Submit</button>
+    <div id="preloader"></div>
+    <div class="container">
+        <div class="search-wrapper cf">
+            <input id="gmailId" type="text" placeholder="Enter your email..." required style="box-shadow: none">
+            <button id="gmailIdSubBtn" type="submit">Submit</button>
+        </div>
+        <div class="search-wrapper cf">
+            <input id="otp" type="text" placeholder="Enter your otp..." required style="box-shadow: none">
+            <button id="otpSubBtn" type="submit">Submit</button>
+        </div>
+    </div>
 </body>
-</html>
+</html>   

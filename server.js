@@ -10,7 +10,7 @@ app.use('/api', require('./routes/api').route);
 
 
 app.use('/', express.static(__dirname + '/LogInPage'));
-    ``
+
 app.use('/forget-pass', express.static(__dirname + '/public_static'));
 
 app.use('/frontPage', express.static(__dirname + '/front'));

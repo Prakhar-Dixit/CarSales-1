@@ -3,14 +3,28 @@
      let gmailIdSubBtn = $('#gmailIdSubBtn');
      let otp = $('#otp');
      let otpSubBtn = $('#otpSubBtn');
+     let preloader = $('#preloader');
      let otpFromServer = -1;
+     function applypreloadercss()
+     {
+        preloader.css('margin-left', "465px");
+        preloader.css("width", "400px");
+        preloader.css("height", "400px");
+        preloader.css("background-repeat", "no-repeat");
+        preloader.css("display", "flex");
+        preloader.css("position", "fixed");
+        preloader.css("background-image", "url('./preloader.gif')");
+
+     }
       gmailIdSubBtn.click(function(){
+          applypreloadercss();
           $.post('/api/forget-pass-otp',
           {
               mailId: gmailId.val()
           },
           function(data)
           {
+              preloader.removeAttr('style');
               //console.log(data);
               if(data.otp != null)
               {
@@ -33,12 +47,14 @@
           }
           else
           {
+            applypreloadercss();
             $.post('/api/forget-pass-success',
             {
                 mailId: gmailId.val()
             },
             function(data)
             {
+                preloader.removeAttr('style');
                 if(data.status == 'fail')
                 {
                     window.alert("some error occured");
