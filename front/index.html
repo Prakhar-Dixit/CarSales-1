@@ -9,20 +9,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Raleway:wght@700&display=swap');
+  </style>
 </head>
 
 <body>
-
+  <!-- <div class="textOImage">
+  <h2>find your perfect car</h2> 
+</div> -->
   <!--image slider start-->
   <!--nav bar starts here-->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" id="navi">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="navi">
+    <a class="navbar-brand" href="#">Deals on Wheels</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="expandme">
       <div class="navbar-nav">
-        <a href="Home" class="nav-item nav-link">Home</a>
+        <a href="Home" class="nav-item nav-link ">Home</a>
         <a href="Home" class="nav-item nav-link">About</a>
         <a href="Home" class="nav-item nav-link">Contact</a>
       </div>
@@ -32,55 +40,11 @@
       </form>
     </div>
   </nav>
-  <div class="container ">
-    <!-- <div class="row  " id="navi"> -->
+  <section class="container-fluid ">
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav   " style=" margin-top: -40px" >
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav> -->
-    <!-- </div> -->
-    <!--nav bar ends here-->
-    <!-- <br>
-    <br>
-    <br>
-    <br>
-     -->
 
     <div class="row">
+
       <div class="sliding-images">
         <div class="slides">
           <!--radio buttons start-->
@@ -102,76 +66,90 @@
           <div class="slide">
             <img src="images/img-1.jpg" alt="">
           </div>
-          <!--slide images end-->
+          <!-- </div>
+          slide images end-->
           <!--automatic navigation start-->
-          <div class="navigation-auto nav1">
+          <!-- <div class="navigation-auto nav1">
             <div class="auto-btn1"></div>
             <div class="auto-btn2"></div>
             <div class="auto-btn3"></div>
             <div class="auto-btn4"></div>
-          </div>
+          </div> -->
           <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual ">
+          <!-- </div> -->
+          <!--manual navigation start-->
+          <!-- <div class="navigation-manual ">
           <label for="radio1" class="manual-btn"></label>
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
           <label for="radio4" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-      </div>
-      <!--image slider end-->
-    </div>
-
-
-
-
-
-
-    <script type="text/javascript">
-      var counter = 1;
-      setInterval(function () {
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if (counter > 4) {
-          counter = 1;
-        }
-      }, 3000);
-    </script>
-
-    <!-- <div class="wrap">
-    <div class="search">
-      <input type="text" class="searchTerm" placeholder="Search your dream car">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
-    </div>
-   </div> -->
-    <div class="row border blankk">
-      <!-- <img src="images/delivery.webp" alt="nai ho rahi show"> -->
-    </div>
-    
-      <div class="row border r2">
-        <div class="col">
-          <img src="images/car_imh.jpg" alt="">
-          <button class=" btn btn-primary">check out!</button>
-        </div>
-        <div class="col">
-          <img src="images/sports.jpg" alt="">
-          <button class=" btn btn-primary">check out!</button>
-
-        </div>
-        <div class="col">
-          <img src="images/suv.jpg" alt="">
-          <button class=" btn btn-primary">check out!</button>
+          </div> -->
+          <!--manual navigation end-->
+          <!--image slider end-->
 
         </div>
       </div>
-  
-  </div>
+      <div class="row">
+        <!--hell start-->
+        <div class="_1aWZg">
+          <h2 class="_3york">The perfect pre-owned car for you</h2>
+          <ul>
+            <li>
+              <div class="he8wP"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                  style="display: inline-block;"><img
+                    src="https://www.cars24.com/js/7f7b7d5596e5e520b606dd534be627b0.svg"
+                    alt="Cars24 Quality Promise"></span><noscript></noscript>
+              </div>
+              <div class="_14Xr3">
+                <h3>Cars24 Quality <span>Promise</span></h3>
+                <p>We test each car on 140 points, check RTO, finance and service history, AND give a 12 month warranty!
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="he8wP"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                  style="display: inline-block;"><img
+                    src="https://www.cars24.com/js/6f751a9d48793a9685f4a1313fed19ab.svg"
+                    alt="Fast financing"></span><noscript></noscript>
+              </div>
+              <div class="_14Xr3">
+                <h3>Fast<span>financing!</span></h3>
+                <p>Zero down-payment, low EMIs, same-day disbursal, minimum documentation - All available instantly.</p>
+              </div>
+            </li>
+            <li>
+              <div class="he8wP"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                  style="display: inline-block;"><img
+                    src="https://www.cars24.com/js/bd308e0db9e755e2cad0e5d6487e7af9.svg"
+                    alt="delivered to you"></span><noscript></noscript>
+              </div>
+              <div class="_14Xr3">
+                <h3>Convenience,<span>delivered to you</span></h3>
+                <p>From home-delivering your car to handling all the paperwork, we’ve simplified car buying for you!</p>
+              </div>
+            </li>
+            <li>
+              <div class="he8wP"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                  style="display: inline-block;"><img
+                    src="https://www.cars24.com/js/bbbbd42860bbd47dabc26a2c8ead6905.svg"
+                    alt="100% refund"></span><noscript></noscript>
+              </div>
+              <div class="_14Xr3">
+                <h3>7-day return,<span>100% refund</span></h3>
+                <p>If you don’t like your car, return it and get a complete refund. It’s like a 7-day test drive!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--hell end-->
+      </div>
 
-  <div class="featured-cars">
+  </section>
+
+
+
+
+  <!-- <div class="featured-cars">
 
   </div>
 
@@ -185,10 +163,20 @@
 
   <div class="rating-reviews">
 
-  </div>
+  </div> -->
 
 
 
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 4) {
+        counter = 1;
+      }
+    }, 3000);
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

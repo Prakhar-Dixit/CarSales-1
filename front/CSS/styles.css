@@ -4,13 +4,13 @@ body{
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background: whitesmoke;
     font-family: 'Open Sans', sans-serif;
   }
 .row{
-  height:20rem;
+  height:42rem;
 }
   .search {
     width: 100%;
@@ -86,18 +86,40 @@ body{
     overflow: hidden;
     display: inline-block;
   }
-  
+  .navbar-brand{
+  font-family: 'Dancing Script', cursive;
+  font-size:3rem;
+  margin-bottom:0;
+  }
+  .r2{
+    margin-top:0;
+
+  }
+  .navbar-nav{
+    font-size: 1.2rem;
+font-family: 'Raleway', sans-serif;
+  }
+  .navbar-nav :nth-of-type(1){
+    margin-left: 9rem;
+  }
+  .navbar-nav :nth-of-type(2){
+    margin-left: 3rem;
+  }
+  .navbar-nav :nth-of-type(3){
+    margin-left: 3rem;
+  }
   .slides{
     width: 500%;
-    height: 500px;
+    height: 39rem;
     display: flex;
+    margin-top:6rem;
   }
   
   .slides input{
     display: none;
   }
   .navbar{
-
+    
     display: block;
   }
   .slide{
@@ -193,7 +215,12 @@ body{
     background: #40D3DC;
   }
         
-
+.textOImage{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+}
 /* .sliding-images{
     background-color: aqua;
     height: 678.214px;
