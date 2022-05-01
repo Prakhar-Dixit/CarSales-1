@@ -9,7 +9,7 @@ app.use('/pages', require('./routes/pages').route);
 app.use('/api', require('./routes/api').route);
 
 
-app.use('/', express.static(__dirname + '/LogInPage'));
+app.use('/', express.static(__dirname + '/front'));
 
 app.use('/forget-pass', express.static(__dirname + '/public_static'));
 
