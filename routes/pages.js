@@ -44,7 +44,6 @@ route.post('/login',encoder, (req,res) => {
     var password = req.body.password;
     db.checkIfExist(userName,password)
     .then((id)=>{
-        console.log(id);
         if(id.length > 0)
         {
             res.redirect('/frontPage');
