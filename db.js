@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-    host : 'localhost',
-    user : 'rishabh',
-    password: 'rishabh',
-    database: 'carsales'
+    host : 'sql6.freesqldatabase.com',
+    user : 'sql6493184',
+    password: '3PZEvfbv4r',
+    database: 'sql6493184'
 });
 
 
@@ -12,7 +12,7 @@ function addNewPerson(fullName, userName, password)
 {
     return new Promise(function(resolve,reject){
         connection.query(
-            `INSERT INTO infoOfUser VALUES (DEFAULT, ?, ?, ?)`,
+            `INSERT INTO infoofuser VALUES (DEFAULT, ?, ?, ?)`,
             [fullName,userName,password],
             function(err,result)
             {
@@ -71,6 +71,7 @@ function getPassword(mailId)
         )
     })
 }
+
 exports = module.exports = {
     addNewPerson,
     checkIfExist,
